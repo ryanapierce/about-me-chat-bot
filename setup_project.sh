@@ -12,8 +12,6 @@ echo "Creating placeholder files..."
 touch $PROJECT_DIR/requirements.txt
 touch $PROJECT_DIR/templates/ask_about_me_chat.html
 touch $PROJECT_DIR/static/css/main.css
-touch $PROJECT_DIR/static/js/main.js
-touch $PROJECT_DIR/static/images/placeholder.png
 touch $PROJECT_DIR/.gitignore
 touch $PROJECT_DIR/README.md
 
@@ -29,9 +27,9 @@ EOL
 # Add default content to README.md
 echo "Setting up README.md..."
 cat <<EOL > $PROJECT_DIR/README.md
-# About Me Chatbot
+# Experience Chatbot
 
-This chatbot references resume and notes to answer questions about the developer's background and experience.
+This chatbot references predefined data to answer questions about experience and background.
 
 ## Structure
 - **static/css/** - CSS files for styling.
