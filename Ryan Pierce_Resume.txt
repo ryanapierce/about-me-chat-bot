@@ -1,0 +1,111 @@
+Ryan Pierce  
+Tecumseh, MI | 248 -378-7139 | rpierce521@gmail.com  | www.linkedin.com/in/ryan-a-pierce  | ryanpierce.dev  
+ 
+Experience  
+Ford Motor Company										Dearborn, MI  
+Data Engineer, Manufacturing & Quality                                                   May 2024 – January 2025  
+• Provided data stewardship across 15 sources, resolving ETL issues to enhance data accuracy and reliability.  
+• Led cross-functional meetings, coordinating ETL pipelines, migrating data to GCP, and accelerating analytics delivery time. 
+• Developed six data products with Airflow, Python, and BigQuery, streamlining the aggregation of 500+ manufacturing tables.  
+• Optimized  Python scripts, reducing ETL pipeline development time by 75%  
+• Created and centralized documentation to streamline new-hire onboarding for Data Stewards.  
+• Ranked 3rd in Ford’s Hackathon, leveraging LLM technology to improve manufacturing quality.  
+ 
+Ford Motor Company										Dearborn, MI  
+Data Engineer, IT Business Operations                                            	March 2023 – May 2024  
+• Supported dashboard development in Alteryx and QlikSense,  enabling business users to make data-driven decisions.  
+• Led GCP migration from on-prem Hadoop, boosting scalability, efficiency, and cost savings.  
+• Documented processes to reduce the learning curve for new teammates, accelerating role proficiency. 
+• Collaborated with cross-functional stakeholders to address business issues and deliver data-driven solutions. 
+
+Ford Motor Company 							Dearborn, MI   
+Data Governance Analyst                                      April 2021 – March 2023  
+• Built ETL pipelines using Alteryx, SQL  & Python to cleanse diverse data, enabling performance metrics for the team.  
+• Served as Data Steward and SME  for a Hadoop Hive database with over 300 tables to ensure data integrity.  
+• Conducted root cause analysis of data discrepancies, comparing multiple data sources and API endpoints.  
+• Enforced security policies for users, ensuring role-based access control and compliance with governance standards.  
+• Led BMC Remedy ITSM adoption, improving issue tracking and access-provisioning workflows.  
+
+Army National Guard									Lnasing, MI  
+Budget Officer                                                            October 2024 – Present  
+• Supporting the management of a multi-million-dollar budget for recruitment & retention efforts, ensuring policy compliance. 
+• Automate workflows using PowerAutomate/PowerBI, reducing manual labor hours and streamlining data reporting.  
+• Develop annual financial plans aligned with unit priorities, maximizing resource efficiency and minimizing waste.  
+ 
+Army National Guard							Taylor, MI  
+Finance and Accounting Officer                         January 2021 – October 2024  
+• Developed financial readiness training for ~1,500 soldiers, improving fiscal responsibility.  
+• Led a 15-person Logistics team, ensuring mission readiness through training and operational efficiency.  
+• Commissioned as a Finance Officer in December 2020
+ 
+Activated Army National Guard									Joint Task Force Guantánamo Bay
+Financial Analyst, Joint Task Force Guantánamo Bay                                                         June 2023 – May 2024  
+• Executed financial expenditures within Army regulations, reducing risk for a multi-million-dollar budget.  
+• Developed and presented financial reports and briefings, leveraging  SAP & Excel for senior leadership.  
+• Managed travel reimbursement program for 900+ personnel, streamlining processes and minimizing errors.  
+
+Army National Guard										Howell, MI  
+S3 (Operations) Assistant 							       January 2017 – December 2020
+• Assisted in the facilitation and planning of on-going and future operations for a Battalion of 430 soldiers
+• Developed and distributed Operations Orders to extend guidance to subordinate units
+
+Army National Guard										Howell, MI			 
+MOS 94F-Computer/Detection Systems Repairer	           				             October 2014 – January 2017
+• Used test, measurement and diagnostic equipment; test program sets; and interactive electronic technical manuals to troubleshoot and repair equipment
+• Performed preventive maintenance checks on equipment 
+
+Coupa Software											 Ann Arbor, MI
+Technical Support Specialist                                           				October 2020 - April 2021
+• Assistd internal users and external customers with installation, support, and license deployment
+• Provided first-tier help-desk support in customer installation troubleshooting of product offering 
+• Utilized Salesforce.com to manage and issue licenses for purchases, renewals, projects, and training
+     
+Ford Motor Company                              			Dearborn, MI  
+Intern, Service & Engineering Operation s                    June 2020 – August 2020  
+• Developed R and Tableau dashboards, analyzing data for informed decision-making.  
+• Implemented predictive analytics in Tableau, forecasting future sales and guiding resource allocations.  
+• Automated data pipelines with Alteryx and integrated HTML, CSS, and JavaScript, enhancing dashboard appearance. 
+
+Faurecia Interior Systems 									Saline, MI	                                   	                    
+Financial Analyst Intern								Mar 2019-Jun 2020
+• Completed various reports/KPIs to assist in internal analysis and decision-making for a 1.4M sq ft plant.
+• Performed capital maintenance on $178M of equipment to properly account for new and existing assets or tooling.
+• Developed macros in Excel to semi-automate reporting using VBA.
+• Prepared 12 month-end journal entries.
+ 
+Faurecia Interior Systems										Southfield, MI			       	   	       
+Sales Analyst Intern											Jun 2018-Mar 2019
+• Utilized SAP to create pricing and scheduling agreements for production and service parts across 8 manufacturing plants.
+• Audited system data using Excel to ensure the accuracy of information.
+• Developed text and video work instructions/documentation to facilitate continuity after employee transition. 
+
+Precision Stamping									Howell, MI	 	 	 	                                                        
+Die Setter 									May 2017-Aug 2017 
+• Performed task prioritization to enable multiple press machines to produce quality parts 
+• Used attention to detail for part inspection to ensure the quality of parts
+• Analyzed inventory management data to comply with the daily production schedule
+• Noted for the ability to manage workflow successfully to exceed expectations, take on additional work, and perform well with high-volume orders to deliver accurate and on-time results
+• Set up and completed 118k part run with no quality issues or downtime after one month of employment
+
+Michigan Rod Products 										Howell, MI                                                                  
+CNC Bender Set Up/Operator								July 2014-May 2017
+• Provided first-hand experience and input for special projects pertaining to increased aggregate productivity
+• Participated in Total Quality Management class and program to increase quality across the plant
+• Utilized CNC program TouchSoft to program CNC benders to produce high-quality automotive parts matching specifications
+• Employed mechanical aptitude to install and remove tooling and raw materials from 3 production machines each day
+• Applied attention to detail for part inspection and measurement for quality assurance and logged any adjustments 
+ 
+Education  
+Wayne State University – Master of Data Science & Business Analytics                     In Progress, Estimated 2026 
+ 
+Eastern Michigan University – Bachelor of Business Administration in Accounting & Information Systems     Graduated: December 2020  
+Minor in Military Science & Leadership - Commissioned from Eastern Michigan University's ROTC program as a Finance Officer 
+
+Washtenaw Community College - Associate Degree in Criminal Justice			  Graduated: May 2017
+ 
+Skills  
+Programming:  Python, SQL, Terraform, R, VBA, HTML/CSS, JavaScript  
+Data Engineering & ETL:  Apache Airflow, BigQuery, Hadoop/Hive, GCP, Alteryx  
+Business Intelligence & Visualization:  Power BI, Tableau, QlikSense  
+Automation & AI: Alteryx, PowerAutomate, GitHub Copilot, ChatGPT 
+Software: Excel, SAP, Salesforce, ADP

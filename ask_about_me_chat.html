@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me Chatbot - Ryan Pierce</title>
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="stylesheet" href="../static/css/noscript.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta http-equiv="Content-Security-Policy" content="connect-src 'self' https://8y33u4e087.execute-api.us-east-1.amazonaws.com;">
+    <meta op:image:secure_url content="https://ryanpierce.dev/assets/images/openai.jpg">
+    <meta op:image:width content="1200">
+    <meta op:image:height content="630">
+    <meta op:image:alt content="About Me Chatbot">
+    <meta op:image:type content="image/jpeg">
+    <style>
+        .disclaimer {
+            font-size: 0.8em;
+            color: #777;
+        }
+        .button {
+            margin-right: 8px;
+        }
+
+        @media (max-width: 600px) {
+            .actions.stacked .button {
+                -ms-transform: scale(.9); /* IE 9 */
+                -webkit-transform: scale(.9); /* Chrome, Safari, Opera */
+                transform: scale(.9)
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header id="header">
+            <h1>Chat with Ryan Pierce's Experience Bot</h1>
+            <p>Ask about my experience and background.</p>
+        </header>
+        <div id="main">
+            <section id="content" class="main">
+                <textarea id="userInput" rows="4" placeholder="Type your question here..."></textarea>
+                <br>
+                <button id="sendButton" class="button primary">Ask</button>
+                <button id="clearButton" class="button primary">Clear Chat</button>
+                <div id="chatOutput"></div>
+                <p class="disclaimer">
+                    <br>
+                    <strong>Disclaimer:</strong> This chatbot is powered by AI (OpenAI's GPT-3.5 Turbo) and provides responses based on notes and files provided by Ryan Pierce. 
+                    The information provided by the chatbot is for informational purposes only and may not be entirely accurate or up-to-date. <a href="https://github.com/ryanapierce/ryanapierce.github.io/tree/7bf3353f378c46907483b118f185d6afbeeb55a9/assets/projects/about-me-chat-bot">Source Code.</a>
+                </p>
+            </section>
+            <ul class="actions stacked">
+                <li>
+                    <a href="https://ryanpierce.dev/index.html" class="button primary">Return to Homepage</a>
+                    <a href="https://ryanpierce.dev/projects.html" class="button primary">Return to Projects</a>
+                </li>
+            </ul>
+        </div>
+        <footer id="footer">
+            <section>
+                <br><br>
+                <ul class="actions">
+                    <li><a href="../../../resumes/Ryan Pierce_Resume.pdf" class="button secondary">Click here for printable resume</a></li>
+                </ul>
+            </section>
+            <section>
+                <dl class="alt">
+                    <h2>Ryan Pierce</h2>
+                    <dt>Location</dt>
+                    <dd>Tecumseh, MI &bull; USA</dd>
+                    <dt>Phone</dt>
+                    <dd><a href="tel:2483787139">(248) 378-7139</a></dd>
+                    <dt>Email</dt>
+                    <dd><a href="mailto:rpierce521@gmail.com">rpierce521@gmail.com</a></dd>
+                    <a href="https://www.linkedin.com/in/ryan-a-pierce" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a>
+                    <a href="https://github.com/ryanapierce" class="icon brands fa-github alt"><span class="label">GitHub</span></a>
+                </dl>
+            </section>
+            <p class="copyright">&copy; Ryan Pierce. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+        </footer>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            const BACKEND_URL = "https://8y33u4e087.execute-api.us-east-1.amazonaws.com/prod/chat";
+
+            function escapeHtml(text) {
+                var map = {
+                    '&': '&amp;',
+                    '<': '&lt;',
+                    '>': '&gt;',
+                    '"': '&quot;',
+                    "'": '&#039;'
+                };
+                return text.replace(/[&<>"']/g, function(m) { return map[m]; });
+            }
+    
+            function sendMessage() {
+                var userInput = $('#userInput').val().trim();
+                if (!userInput) {
+                    alert('Please enter a question or comment.');
+                    return;
+                }
+    
+                $('#chatOutput').append('<p><strong>You:</strong> ' + userInput + '</p>');
+    
+                $.ajax({
+                    url: "https://8y33u4e087.execute-api.us-east-1.amazonaws.com/prod/chat",
+                    type: "POST",
+                    contentType: "application/json",
+                    crossDomain: true,
+                    data: JSON.stringify({ query: userInput }),
+                    success: function(response) {
+                        console.log("API Response:", response); // Debugging
+                        try {
+                            var jsonResponse = typeof response === "string" ? JSON.parse(response) : response;
+                            if (jsonResponse.response) {
+                                $('#chatOutput').append('<p><strong>Chatbot:</strong> ' + escapeHtml(jsonResponse.response) + '</p>');
+                            } else {
+                                $('#chatOutput').append('<p><strong>Chatbot:</strong> No valid response received.</p>');
+                            }
+                        } catch (e) {
+                            console.error("Parsing Error:", e);
+                            $('#chatOutput').append('<p><strong>Chatbot:</strong> Error processing response.</p>');
+                        }
+                    },
+                    error: function(xhr, status, error) {
+                        console.error("API Error:", xhr.responseText || error);
+                        $('#chatOutput').append('<p><strong>Chatbot:</strong> Error processing request.</p>');
+                    }
+                });
+            }
+    
+            $('#sendButton').click(sendMessage);
+            $('#clearButton').click(function() { $('#chatOutput').empty(); });
+
+            $('#userInput').keypress(function(event) {
+                if (event.which === 13 && !event.shiftKey) {
+                    event.preventDefault();
+                    sendMessage();
+                }
+            });
+        });
+    </script>    
+</body>
+</html>
