@@ -6,8 +6,8 @@ import os
 
 # AWS S3 Config (For Resume & Notes)
 S3_BUCKET = "chat-bot-data"
-LIFE_NOTES_FILE = "notes.json"
-RESUME_FILE = "Resume.txt"
+NOTES_FILE = "notes.json" # JSON file containing life notes in data folder
+RESUME_FILE = "Resume.txt" # text file containing resume in data folder
 s3_client = boto3.client("s3")
 
 # AWS Secrets Manager configuration
@@ -63,8 +63,8 @@ def lambda_handler(event, context):
             "body": json.dumps({"message": "CORS preflight successful"})
         }
 
-    # Load Resume & Life Notes from S3
-    life_notes = get_file_from_s3(LIFE_NOTES_FILE)
+    # Load Resume & Notes from S3
+    life_notes = get_file_from_s3(NOTES_FILE)
     resume_text = get_file_from_s3(RESUME_FILE)
 
     if not life_notes or not resume_text:
@@ -99,7 +99,7 @@ def lambda_handler(event, context):
                 }
 
             system_prompt = f"""
-            You are a chatbot that provides insights into Ryan Pierce's professional background. Respond in a natural, friendly way. Use correct grammar and punctuation.
+            You are a chatbot that provides insights into the developer's professional background. Respond in a natural, friendly way. Use correct grammar and punctuation.
             Reference the following data but do not explicitly mention that they come from stored files.
 
             Resume:
