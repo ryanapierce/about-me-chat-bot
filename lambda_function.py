@@ -4,10 +4,10 @@ from openai import OpenAI
 import boto3
 import os
 
-# AWS S3 Config (For Resume & Life Notes)
-S3_BUCKET = "ryan-pierce-bot-data"
-LIFE_NOTES_FILE = "life_notes.json"
-RESUME_FILE = "Ryan_Pierce_Resume.txt"
+# AWS S3 Config (For Resume & Notes)
+S3_BUCKET = "chat-bot-data"
+LIFE_NOTES_FILE = "notes.json"
+RESUME_FILE = "Resume.txt"
 s3_client = boto3.client("s3")
 
 # AWS Secrets Manager configuration
